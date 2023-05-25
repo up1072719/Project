@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
     	int a,b;
-    	a=10;
-    	b=11;
+    	a=getinput(1);
+    	b=getinput(2);
     	subtract(a,b);
     }
 
@@ -22,4 +22,18 @@ public class Main {
         return out;
         
     }
+
+
+public static int getinput(int pass) {
+	int i;
+    Scanner s= new Scanner(System.in);
+    if (pass==1) {
+    	System.out.println("Enther the first integer");
+    	i= s.nextInt();}
+    else {
+    	System.out.println("Enther the second integer");
+    	i= s.nextInt();}
+    return i;
+    
+}
 }
